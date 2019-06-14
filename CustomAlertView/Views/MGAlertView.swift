@@ -75,6 +75,20 @@ class MGAlertView: UIViewController {
         return stackView
     }()
     
+    
+    let activityIndicator: UIActivityIndicatorView = {
+       
+        let view = UIActivityIndicatorView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.hidesWhenStopped = true
+        view.activityIndicatorViewStyle = .whiteLarge
+        
+        
+        
+        return view
+        
+    }()
+    
     var buttons: [UIButton]?
     
     convenience init() {
